@@ -1,0 +1,79 @@
+Bolum: ECON - Sure: 00:02
+Bolum: HART - Sure: 00:03
+Bolum: POLS - Sure: 00:17
+Bolum: PSYC - Sure: 00:05
+Bolum: CS - Sure: 00:06
+Bolum: EE - Sure: 00:06
+Bolum: CS - Sure: 19:34
+Bolum: POLS - Sure: 00:02
+Bolum: IAED - Sure: 00:07
+Bolum: MAN - Sure: 00:30
+Bolum: ECON - Sure: 00:21
+Bolum: IE - Sure: 00:07
+Bolum: POLS - Sure: 00:01
+Bolum: ME - Sure: 00:03
+Bolum: ECON - Sure: 00:05
+Bolum: LAUD - Sure: 00:07
+Bolum: ECON - Sure: 00:12
+Bolum: IE - Sure: 00:05
+Bolum: POLS - Sure: 00:58
+Bolum: LAW - Sure: 00:02
+Bolum: ME - Sure: 00:07
+Bolum: IAED - Sure: 00:03
+Bolum: MAN - Sure: 00:10
+Bolum: ME - Sure: 00:16
+Bolum: MBG - Sure: 00:30
+Bolum: IE - Sure: 00:02
+Bolum: MAN - Sure: 00:03
+Bolum: ME - Sure: 00:02
+Bolum: ECON - Sure: 00:02
+Bolum: HART - Sure: 01:29
+Bolum: IE - Sure: 00:04
+Bolum: IE - Sure: 00:08
+Bolum: ME - Sure: 00:05
+Bolum: ECON - Sure: 00:36
+Bolum: ECON - Sure: 00:12
+Bolum: IAED - Sure: 00:01
+Bolum: IAED - Sure: 00:02
+Bolum: LAW - Sure: 00:01
+Bolum: IE - Sure: 00:17
+Bolum: LAW - Sure: 00:02
+Bolum: LAW - Sure: 00:03
+Bolum: LAW - Sure: 00:04
+Bolum: LAW - Sure: 00:05
+Bolum: ME - Sure: 00:01
+Bolum: HART - Sure: 00:02
+Bolum: ME - Sure: 00:06
+Bolum: IAED - Sure: 01:36
+Bolum: MBG - Sure: 00:03
+Bolum: ME - Sure: 00:03
+Bolum: ECON - Sure: 00:01
+Rehber: Deniz - Sure: 00:02
+Rehber: BerkBolum: GRA - Sure: 00:02
+Rehber: DoğaBolum: ME - Sure: 00:07
+Rehber: BerkBolum: MBG - Sure: 04:10
+Rehber: Doğa Bolum: IE - Sure: 00:10
+Rehber: Doğa Bolum: MAN - Sure: 00:40
+Rehber: Cemil Bolum: ECON - Sure: 00:40
+Rehber: Cemil Bolum: ME - Sure: 00:04
+Rehber: Doğa Bolum: LAW - Sure: 00:22
+Rehber: Kubilay Bolum: GRA - Sure: 00:15
+Rehber: Cemil Bolum: IE - Sure: 00:07
+Rehber: Ece Bolum: CTIS - Sure: 00:25
+Rehber: Cemil Bolum: CS - Sure: 00:13
+Rehber: Cemil Bolum: CS - Sure: 00:14
+Rehber: Alper Bolum: CTIS - Sure: 00:10
+Rehber: Cemil Bolum: CS - Sure: 00:28
+Rehber:  Bolum: PHIL - Sure: 00:06
+Rehber:  Bolum: AMER - Sure: 00:41
+Rehber: E.Kerem Bolum: GRA - Sure: 00:03
+Rehber: Berkin Bolum: MBG - Sure: 00:04
+Rehber: Cemil Bolum: CS - Sure: 00:44
+Rehber: E.Kerem Bolum: CS - Sure: 01:18
+Rehber: Alper Bolum: CS - Sure: 00:05
+Rehber: Alper Bolum: LAUD - Sure: 00:01
+Rehber: Alper Bolum: comd - Sure: 00:08
+Rehber: Alper Bolum: MATH - Sure: 00:01
+Rehber: Yağmursan Bolum: HART - Sure: 00:02
+Rehber: Irem Bolum: IAED - Sure: 00:08
+Rehber: Ezgi Bolum: HART - Sure: 00:13

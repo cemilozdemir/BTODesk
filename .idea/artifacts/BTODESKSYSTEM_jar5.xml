@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="BTODESKSYSTEM:jar5">
+    <output-path>$PROJECT_DIR$/out/artifacts/BTODESKSYSTEM_jar5</output-path>
+    <root id="archive" name="BTODESKSYSTEM.jar">
+      <element id="module-output" name="BTODESKSYSTEM" />
+    </root>
+  </artifact>
+</component>
