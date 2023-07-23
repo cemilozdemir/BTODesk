@@ -10,12 +10,12 @@ public class Rehber {
         this.name = name;
     }
 
-    public boolean isFree() {
-        return isFree;
+    public int isFree() {
+        return freeStatus;
     }
 
-    public void setFree(boolean free) {
-        isFree = free;
+    public void setFree(int free) {
+        this.freeStatus = free;
     }
 
     public void addDep(String value){
@@ -31,14 +31,14 @@ public class Rehber {
     }
 
     public String name;
-    public boolean isFree;
+    public int freeStatus;
     public String originalDepartment;
     public ArrayList<String> otherDeps = new ArrayList<String>();
 
 
     Rehber(String name, String originalDepartment){
         this.name = name;
-        this.isFree = true;
+        this.freeStatus = 1;
         this.originalDepartment = originalDepartment;
 
     }

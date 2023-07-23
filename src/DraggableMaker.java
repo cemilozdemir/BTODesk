@@ -111,21 +111,70 @@ public class DraggableMaker
 
         if (status == 0 ){
 
-
             Departments newWindow = new Departments();
             department = newWindow.getDepartment();
-            if (department != null){
-                setBorder(new LineBorder(Color.RED, 3));
-                status = 1;
-                button.setText(department + "-" + masaNo);
 
-                timer.start();
+            RehberListForDep rehberListForDep = new RehberListForDep(masaNo, department, 2);
+
+            if (rehberListForDep.getFound()){
+                rehber = rehberListForDep.giveRehber();
+
+                if (rehber != null){
+
+                    try {
+                        File dosya = new File("beklemeSureler.txt");
+                        FileWriter fw = new FileWriter("beklemeSureler.txt", true);
+                        fw.write("Bolum: " + department + " - Sure: " + ddMinute + ":" + ddSecond + "\n");
+
+
+                        if (fw != null){
+                            fw.flush();
+                            fw.close();
+                        }
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                    }
+
+                    button.setText("M-" + masaNo);
+                    temp.setName(rehber);
+                    temp.setDepart(department);
+                    temp.setDeskNo(masaNo);
+
+                    busyRehberler.add(temp);
+                    for (Rehber item: LaunchPage.rehbers){
+                        if (item.getName() == rehber){
+
+                            item.setFree(2);
+                        }
+                    }
+                    setBorder(new LineBorder(Color.ORANGE, 3));
+                    status = 2;
+                    counterLabel.setText("00:00");
+                    second = 0;
+                    minute = 0;
+                    timer.start();
+                    if(onButtonClickListener != null){
+                        onButtonClickListener.onButtonClick("Rehber: " + rehber + " - Department: " + department);
+                    }
+                }
             }
+            else{
+                if (department != null){
+                    setBorder(new LineBorder(Color.RED, 3));
+                    status = 1;
+                    button.setText(department + "-" + masaNo);
+
+                    timer.start();
+                }
+            }
+
+
+
 
         }
         else if (status == 1){
 
-            RehberListForDep rehberListForDep = new RehberListForDep(masaNo,department, true);
+            RehberListForDep rehberListForDep = new RehberListForDep(masaNo,department, 1);
 
 
             if (rehberListForDep.getFound()){
@@ -156,7 +205,7 @@ public class DraggableMaker
                     for (Rehber item: LaunchPage.rehbers){
                         if (item.getName() == rehber){
 
-                            item.setFree(false);
+                            item.setFree(2);
                         }
                     }
                     setBorder(new LineBorder(Color.ORANGE, 3));
@@ -193,7 +242,7 @@ public class DraggableMaker
             DraggableMaker.busyRehberler.removeIf(item -> item.getName().equals(rehber));
             for (Rehber item: LaunchPage.rehbers){
                 if (item.getName() == rehber){
-                    item.setFree(true);
+                    item.setFree(1);
 
                 }
             }

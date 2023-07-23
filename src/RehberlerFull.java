@@ -159,7 +159,7 @@ public class RehberlerFull implements ActionListener {
 
         frame.dispose();
 
-        RehberListForDep newFrame = new RehberListForDep(-1, department, false);
+        RehberListForDep newFrame = new RehberListForDep(-1, department, 0);
 
 
     }

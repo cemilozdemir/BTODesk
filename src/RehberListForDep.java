@@ -18,7 +18,7 @@ public class RehberListForDep implements ActionListener {
 
 
 
-    RehberListForDep(int masaNo, String department, boolean addButtonBoool){
+    RehberListForDep(int masaNo, String department, int buttonChoice){
 
         frame.add(northPanel);
         frame.add(southPanel);
@@ -27,8 +27,8 @@ public class RehberListForDep implements ActionListener {
         frame.setTitle("Masa - " + masaNo);
 
 
-        northPanel.setSize(250, 150);
-        southPanel.setSize(250, 150);
+        northPanel.setSize(250, 200);
+        southPanel.setSize(250, 200);
         soutButtonPanel.setSize(250, 100);
 
         JLabel label1 = new JLabel("Has kendi bölümü olanlar:                    ");
@@ -38,16 +38,20 @@ public class RehberListForDep implements ActionListener {
         southPanel.add(label2);
 
         northPanel.setLocation(125, 30);
-        southPanel.setLocation(125, 200);
-        soutButtonPanel.setLocation(125, 350);
+        southPanel.setLocation(125, 300);
+        soutButtonPanel.setLocation(125, 500);
         for (Rehber item: LaunchPage.rehbers){
             if (department == item.getOriginalDepartment()){
                 final JButton label = new JButton(item.getName() + " / ");
-                if (item.isFree()){
+                if (item.isFree() == 1){
                     label.setForeground(new Color(6, 115, 17));
                 }
-                else{
+                else if (item.isFree() == 2){
                     label.setForeground(Color.RED);
+                }
+                else if (item.isFree() == 3){
+                    System.out.println("should workkk");
+                    label.setForeground(Color.ORANGE);
                 }
                 northPanel.add(label);
                 label.addActionListener(new ActionListener() {
@@ -62,11 +66,15 @@ public class RehberListForDep implements ActionListener {
             if (item.otherDeps.contains(department)){
                 final JButton label = new JButton(item.getName() + " / ");
                 southPanel.add(label);
-                if (item.isFree()){
+                if (item.isFree() == 1){
                     label.setForeground(new Color(6, 115, 17));
                 }
-                else{
+                else if (item.isFree() == 2){
                     label.setForeground(Color.RED);
+                }
+                else if (item.isFree() == 3){
+                    System.out.println("should wok");
+                    label.setForeground(Color.ORANGE);
                 }
                 label.addActionListener(new ActionListener() {
                     @Override
@@ -80,7 +88,7 @@ public class RehberListForDep implements ActionListener {
         }
 
 
-        addButtons(addButtonBoool);
+        addButtons(buttonChoice);
 
         frame.setSize(500,600);
 
@@ -92,8 +100,8 @@ public class RehberListForDep implements ActionListener {
 
 
 
-    public void addButtons(boolean bool){
-        if (bool){
+    public void addButtons(int num){
+        if (num == 1){
             JButton beklemedeyiz = new JButton("Hala gelmedi");
             JButton geldi = new JButton("Geldi çok şükür");
 
@@ -111,8 +119,24 @@ public class RehberListForDep implements ActionListener {
 
                 }
             });
+        }
+        if (num == 2){
+            JButton belliDegil = new JButton("Rehber Belli Değil");
+
+            belliDegil.setSize(100,60);
 
 
+            soutButtonPanel.add(belliDegil);
+
+
+            belliDegil.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    found = false;
+                    frame.dispose();
+
+                }
+            });
         }
 
 

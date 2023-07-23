@@ -32,6 +32,7 @@ public class Departments implements ActionListener {
     JButton button23 = new JButton("ELIT");
     JButton button24 = new JButton("PHIL");
     JButton button25 = new JButton("THM");
+    JButton button26 = new JButton("PHYS");
 
     String department;
     Departments(){
@@ -110,6 +111,9 @@ public class Departments implements ActionListener {
         button25.setBounds(280, 140 , 70 ,35);
         button25.addActionListener(this);
 
+        button26.setBounds(140,175, 70, 35);
+        button26.addActionListener(this);
+
 
 
         frame.add(button1);
@@ -137,9 +141,10 @@ public class Departments implements ActionListener {
         frame.add(button23);
         frame.add(button24);
         frame.add(button25);
+        frame.add(button26);
 
 
-        frame.setSize(365,220);
+        frame.setSize(365,255);
 
         frame.setLayout(null);
         frame.setLocationRelativeTo(null);
@@ -156,6 +161,7 @@ public class Departments implements ActionListener {
         JButton o = (JButton) e.getSource();
         String name = o.getText();
         department = name;
+
         frame.dispose();
 
 

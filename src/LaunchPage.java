@@ -107,12 +107,13 @@ public class LaunchPage implements OnButtonClickLİstener  {
         addToRehbers("Berk","ME");
         addToRehbers("Dicle","ME");
         addToRehbers("Umut","ME");
-        addToRehbers("Zeynep","PHYS");
+        addToRehbers("Zeynep Ç","PHYS");
         addToRehbers("Bora","POLS");
         addToRehbers("Eylül","POLS");
         addToRehbers("Dilanur","PSYC");
         addToRehbers("Melis","PSYC");
         addToRehbers("Dilay","TRIN");
+        addToRehbers("Zeynep Su", "CS");
 
         rehbers.sort(Comparator.comparing(Rehber::getName));
 

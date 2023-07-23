@@ -77,3 +77,7 @@ Rehber: Alper Bolum: MATH - Sure: 00:01
 Rehber: Yağmursan Bolum: HART - Sure: 00:02
 Rehber: Irem Bolum: IAED - Sure: 00:08
 Rehber: Ezgi Bolum: HART - Sure: 00:13
+Rehber: Alpin Bolum: ECON - Sure: 00:01
+Rehber: Bengisu Bolum: CS - Sure: 00:01
+Rehber: Bengisu Bolum: CTIS - Sure: 00:01
+Rehber: Dilay Bolum: PHIL - Sure: 00:01
