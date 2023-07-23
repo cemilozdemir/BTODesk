@@ -14,11 +14,16 @@ public class Warning implements ActionListener {
     Warning(){
 
 
+        ImageIcon icon = new ImageIcon("cemil.jpeg");
+        JLabel photoLabel = new JLabel(icon);
+        photoLabel.setSize(250,250);
+        photoLabel.setLocation(125, 20);
+
         button.setSize(390, 40);
         label.setSize(390,40);
 
-        button.setLocation(50,90);
-        label.setLocation(50, 140);
+        button.setLocation(50,290);
+        label.setLocation(50, 340);
         button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -28,9 +33,12 @@ public class Warning implements ActionListener {
 
         frame.add(button);
         frame.add(label);
+        frame.add(photoLabel);
 
 
-        frame.setSize(500,260);
+
+
+        frame.setSize(500,500);
 
         frame.setLayout(null);
         frame.setLocationRelativeTo(null);
