@@ -13,6 +13,7 @@ public class RehberListForDep implements ActionListener {
    public JPanel southPanel = new JPanel();
    public boolean found = false;
    public String rehber = "";
+   public boolean iptal = false;
    JButton label = new JButton();
 
 
@@ -50,16 +51,20 @@ public class RehberListForDep implements ActionListener {
                     label.setForeground(Color.RED);
                 }
                 else if (item.isFree() == 3){
-                    System.out.println("should workkk");
                     label.setForeground(Color.ORANGE);
                 }
                 northPanel.add(label);
                 label.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-                        found = true;
-                        rehber = item.getName();
-                        frame.dispose();
+                        if (item.isFree() == 2){
+                            Warning warn = new Warning();
+                        }
+                        else{
+                            found = true;
+                            rehber = item.getName();
+                            frame.dispose();
+                        }
                     }
                 });
             }
@@ -73,15 +78,20 @@ public class RehberListForDep implements ActionListener {
                     label.setForeground(Color.RED);
                 }
                 else if (item.isFree() == 3){
-                    System.out.println("should wok");
                     label.setForeground(Color.ORANGE);
                 }
                 label.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-                        found = true;
-                        rehber = item.getName();
-                        frame.dispose();
+                        if (item.isFree() == 2){
+                            Warning warn = new Warning();
+                        }
+                        else{
+                            found = true;
+                            rehber = item.getName();
+                            frame.dispose();
+                        }
+
                     }
                 });
             }
@@ -122,11 +132,15 @@ public class RehberListForDep implements ActionListener {
         }
         if (num == 2){
             JButton belliDegil = new JButton("Rehber Belli Değil");
+            JButton iptalEt = new JButton("İptal Et");
 
             belliDegil.setSize(100,60);
 
+            iptalEt.setSize(100,60);
+
 
             soutButtonPanel.add(belliDegil);
+            soutButtonPanel.add(iptalEt);
 
 
             belliDegil.addActionListener(new ActionListener() {
@@ -135,6 +149,14 @@ public class RehberListForDep implements ActionListener {
                     found = false;
                     frame.dispose();
 
+                }
+            });
+
+            iptalEt.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    iptal = true;
+                    frame.dispose();
                 }
             });
         }
@@ -149,6 +171,8 @@ public class RehberListForDep implements ActionListener {
     public boolean getFound(){
         return this.found;
     }
+
+    public boolean getIptal(){return this.iptal;}
 
     public String giveRehber(){
         return this.rehber;

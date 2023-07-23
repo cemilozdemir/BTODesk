@@ -114,7 +114,13 @@ public class DraggableMaker
             Departments newWindow = new Departments();
             department = newWindow.getDepartment();
 
+
+
+            if (department != null){
+
+
             RehberListForDep rehberListForDep = new RehberListForDep(masaNo, department, 2);
+
 
             if (rehberListForDep.getFound()){
                 rehber = rehberListForDep.giveRehber();
@@ -158,14 +164,25 @@ public class DraggableMaker
                     }
                 }
             }
-            else{
-                if (department != null){
+            else if (rehberListForDep.getIptal()){
+
+                    setBorder(new LineBorder(Color.GREEN, 3));
+                    status = 0;
+                    counterLabel.setText("00:00");
+                    second = 0;
+                    minute = 0;
+                    timer.stop();
+                }
+            else {
+
+                if (department != null) {
                     setBorder(new LineBorder(Color.RED, 3));
                     status = 1;
                     button.setText(department + "-" + masaNo);
 
                     timer.start();
                 }
+            }
             }
 
 
@@ -174,7 +191,7 @@ public class DraggableMaker
         }
         else if (status == 1){
 
-            RehberListForDep rehberListForDep = new RehberListForDep(masaNo,department, 1);
+            RehberListForDep rehberListForDep = new RehberListForDep(masaNo,department, 2);
 
 
             if (rehberListForDep.getFound()){
@@ -218,6 +235,16 @@ public class DraggableMaker
                         onButtonClickListener.onButtonClick("Rehber: " + rehber + " - Department: " + department);
                     }
                 }
+
+            }
+            if (rehberListForDep.getIptal()){
+
+                setBorder(new LineBorder(Color.GREEN, 3));
+                status = 0;
+                counterLabel.setText("00:00");
+                second = 0;
+                minute = 0;
+                timer.stop();
             }
 
 

@@ -53,6 +53,14 @@ public class LaunchPage implements OnButtonClickLİstener  {
     DraggableMaker mc24 = new DraggableMaker(this,25);
     DraggableMaker mc25 = new DraggableMaker(this,26);
     DraggableMaker mc26 = new DraggableMaker(this,27);
+    DraggableMaker mc27 = new DraggableMaker(this, 28);
+    DraggableMaker mc28 = new DraggableMaker(this, 29);
+    DraggableMaker mc29 = new DraggableMaker(this,30);
+
+    DraggableMaker mc30 = new DraggableMaker(this, 31);
+    DraggableMaker mc31 = new DraggableMaker(this, 32);
+    DraggableMaker mc32 = new DraggableMaker(this,33);
+
     JPanel sidePanel = new JPanel();
 
 
@@ -114,6 +122,7 @@ public class LaunchPage implements OnButtonClickLİstener  {
         addToRehbers("Melis","PSYC");
         addToRehbers("Dilay","TRIN");
         addToRehbers("Zeynep Su", "CS");
+        addToRehbers("Atakan", "IE");
 
         rehbers.sort(Comparator.comparing(Rehber::getName));
 
@@ -314,6 +323,19 @@ public class LaunchPage implements OnButtonClickLİstener  {
         mc25.setLocation(1361,15);
         frame.add(mc26);
         mc26.setLocation(1361,15);
+        frame.add(mc27);
+        mc27.setLocation(1361,15);
+        frame.add(mc28);
+        mc28.setLocation(1361,15);
+        frame.add(mc29);
+        mc29.setLocation(1361,15);
+        frame.add(mc30);
+        mc30.setLocation(1361,65);
+        frame.add(mc31);
+        mc31.setLocation(1361,65);
+        frame.add(mc32);
+        mc32.setLocation(1361,65);
+
 
         masadakiler.addActionListener(new ActionListener() {
             @Override

@@ -81,3 +81,10 @@ Rehber: Alpin Bolum: ECON - Sure: 00:01
 Rehber: Bengisu Bolum: CS - Sure: 00:01
 Rehber: Bengisu Bolum: CTIS - Sure: 00:01
 Rehber: Dilay Bolum: PHIL - Sure: 00:01
+Rehber: Irem Bolum: LAUD - Sure: 00:01
+Rehber: Dilay Bolum: PHIL - Sure: 00:02
+Rehber: Dilay Bolum: HART - Sure: 00:07
+Rehber: Fatma Bolum: ECON - Sure: 00:01
+Rehber: Dilge Bolum: ECON - Sure: 00:20
+Rehber: Dilay Bolum: HART - Sure: 00:05
+Rehber: Başak D Bolum: EE - Sure: 00:11

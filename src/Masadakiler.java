@@ -50,7 +50,6 @@ public class Masadakiler implements ActionListener {
 
                 for (Rehber item: LaunchPage.rehbers){
                     if (item.getName() == rehber){
-                        System.out.println("sa");
                         if (item.isFree() == 1){
                             System.out.println("as");
                             item.setFree(3);
