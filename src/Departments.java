@@ -7,32 +7,33 @@ public class Departments implements ActionListener {
 
     JDialog d1 = new JDialog();
     JDialog frame = new JDialog(d1,Dialog.ModalityType.DOCUMENT_MODAL);
-    JButton button1 = new JButton("CS");
-    JButton button2 = new JButton("CTIS");
-    JButton button3 = new JButton("EE");
-    JButton button4 = new JButton("IE");
-    JButton button5 = new JButton("MAN");
-    JButton button6 = new JButton("ARCH");
-    JButton button7 = new JButton("comd");
-    JButton button8 = new JButton("ECON");
-    JButton button9 = new JButton("HART");
-    JButton button10 = new JButton("IAED");
-    JButton button11 = new JButton("IR");
-    JButton button12 = new JButton("LAW");
-    JButton button13 = new JButton("MBG");
-    JButton button14 = new JButton("ME");
-    JButton button15 = new JButton("POLS");
-    JButton button16 = new JButton("PSYC");
-    JButton button17 = new JButton("TRIN");
-    JButton button18 = new JButton("LAUD");
-    JButton button19 = new JButton("GRA");
-    JButton button20 = new JButton("CHEM");
-    JButton button21 = new JButton("MATH");
-    JButton button22 = new JButton("AMER");
-    JButton button23 = new JButton("ELIT");
-    JButton button24 = new JButton("PHIL");
+    JButton button1 = new JButton("AMER");
+    JButton button2 = new JButton("ARCH");
+    JButton button3 = new JButton("CHEM");
+    JButton button4 = new JButton("comd");
+    JButton button5 = new JButton("CS");
+    JButton button6 = new JButton("CTIS");
+    JButton button7 = new JButton("ECON");
+    JButton button8 = new JButton("EE");
+    JButton button9 = new JButton("ELIT");
+    JButton button10 = new JButton("GRA");
+    JButton button11 = new JButton("HART");
+    JButton button12 = new JButton("IAED");
+    JButton button13 = new JButton("IE");
+    JButton button14 = new JButton("IR");
+    JButton button15 = new JButton("LAUD");
+    JButton button16 = new JButton("LAW");
+    JButton button17 = new JButton("MAN");
+    JButton button18 = new JButton("MATH");
+    JButton button19 = new JButton("MBG");
+    JButton button20 = new JButton("ME");
+    JButton button21 = new JButton("PHIL");
+    JButton button22 = new JButton("PHYS");
+    JButton button23 = new JButton("POLS");
+    JButton button24 = new JButton("PSYC");
     JButton button25 = new JButton("THM");
-    JButton button26 = new JButton("PHYS");
+    JButton button26 = new JButton("TRIN");
+    JButton button27 = new JButton("MSSF");
 
     String department;
     Departments(){
@@ -114,6 +115,9 @@ public class Departments implements ActionListener {
         button26.setBounds(140,175, 70, 35);
         button26.addActionListener(this);
 
+        button27.setBounds(210,140,70,35);
+        button27.addActionListener(this);
+
 
 
         frame.add(button1);
@@ -142,15 +146,18 @@ public class Departments implements ActionListener {
         frame.add(button24);
         frame.add(button25);
         frame.add(button26);
+        frame.add(button27);
 
 
-        frame.setSize(365,255);
+        frame.setSize(365,320);
 
         frame.setLayout(null);
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
 
     }
+
+
 
     public String getDepartment(){
         return department;

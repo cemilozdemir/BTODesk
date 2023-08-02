@@ -57,8 +57,8 @@ public class RehberListForDep implements ActionListener {
                 label.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-                        if (item.isFree() == 2){
-                            Warning warn = new Warning();
+                        if (item.isFree() == 2 || item.isFree() == 3){
+                            Warning warn = new Warning("Yaptığım hatanın farkındayım. Uygun rehber bulacağım","Eğer uygunsa da, o masayı kapatıp buraya ekleyeceğim." );
                         }
                         else{
                             found = true;
@@ -84,7 +84,7 @@ public class RehberListForDep implements ActionListener {
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         if (item.isFree() == 2){
-                            Warning warn = new Warning();
+                            Warning warn = new Warning("Yaptığım hatanın farkındayım. Uygun rehber bulacağım","Eğer uygunsa da, o masayı kapatıp buraya ekleyeceğim.");
                         }
                         else{
                             found = true;

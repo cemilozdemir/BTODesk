@@ -10,7 +10,7 @@ public class Desk  extends JComponent implements ActionListener {
 
     String val;
     int status;
-    DraggableMaker desk = new DraggableMaker(null, 0);
+    DraggableMaker desk = new DraggableMaker(null, 0, 'M');
 
     JButton myButton = new JButton();
 

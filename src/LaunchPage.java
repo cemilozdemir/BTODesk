@@ -25,41 +25,48 @@ public class LaunchPage implements OnButtonClickLİstener  {
     JFrame frame = new JFrame("Acar Systems v1.1");
     JButton masadakiler = new JButton("Extra Durum");
     JButton availableRehberler = new JButton("Rehberler");
+    JButton masaEkle = new JButton("Masa ekle");
     public static ArrayList<Rehber> rehbers = new ArrayList<Rehber>();
-    DraggableMaker mc = new DraggableMaker(this,1);
-    DraggableMaker mc1 = new DraggableMaker(this,2);
-    DraggableMaker mc2 = new DraggableMaker(this,3);
-    DraggableMaker mc3 = new DraggableMaker(this,4);
-    DraggableMaker mc4 = new DraggableMaker(this,5);
-    DraggableMaker mc5 = new DraggableMaker(this,6);
-    DraggableMaker mc6 = new DraggableMaker(this,7);
-    DraggableMaker mc7 = new DraggableMaker(this,8);
-    DraggableMaker mc8 = new DraggableMaker(this,9);
-    DraggableMaker mc9 = new DraggableMaker(this,10);
-    DraggableMaker mc10 = new DraggableMaker(this,11);
-    DraggableMaker mc11 = new DraggableMaker(this,12);
-    DraggableMaker mc12 = new DraggableMaker(this,13);
-    DraggableMaker mc13 = new DraggableMaker(this,14);
-    DraggableMaker mc14 = new DraggableMaker(this,15);
-    DraggableMaker mc15 = new DraggableMaker(this,16);
-    DraggableMaker mc16 = new DraggableMaker(this,17);
-    DraggableMaker mc17 = new DraggableMaker(this,18);
-    DraggableMaker mc18 = new DraggableMaker(this,19);
-    DraggableMaker mc19 = new DraggableMaker(this,20);
-    DraggableMaker mc20 = new DraggableMaker(this,21);
-    DraggableMaker mc21 = new DraggableMaker(this,22);
-    DraggableMaker mc22 = new DraggableMaker(this,23);
-    DraggableMaker mc23 = new DraggableMaker(this,24);
-    DraggableMaker mc24 = new DraggableMaker(this,25);
-    DraggableMaker mc25 = new DraggableMaker(this,26);
-    DraggableMaker mc26 = new DraggableMaker(this,27);
-    DraggableMaker mc27 = new DraggableMaker(this, 28);
-    DraggableMaker mc28 = new DraggableMaker(this, 29);
-    DraggableMaker mc29 = new DraggableMaker(this,30);
+    DraggableMaker mc = new DraggableMaker(this,1, 'M');
+    DraggableMaker mc1 = new DraggableMaker(this,2,'M');
+    DraggableMaker mc2 = new DraggableMaker(this,3,'M');
+    DraggableMaker mc3 = new DraggableMaker(this,4,'M');
+    DraggableMaker mc4 = new DraggableMaker(this,5,'M');
+    DraggableMaker mc5 = new DraggableMaker(this,6,'M');
+    DraggableMaker mc6 = new DraggableMaker(this,7,'M');
+    DraggableMaker mc7 = new DraggableMaker(this,8,'M');
+    DraggableMaker mc8 = new DraggableMaker(this,9,'M');
+    DraggableMaker mc9 = new DraggableMaker(this,10,'M');
+    DraggableMaker mc10 = new DraggableMaker(this,11,'M');
+    DraggableMaker mc11 = new DraggableMaker(this,12,'M');
+    DraggableMaker mc12 = new DraggableMaker(this,13,'M');
+    DraggableMaker mc13 = new DraggableMaker(this,14,'M');
+    DraggableMaker mc14 = new DraggableMaker(this,15,'M');
+    DraggableMaker mc15 = new DraggableMaker(this,16,'M');
+    DraggableMaker mc16 = new DraggableMaker(this,17,'M');
+    DraggableMaker mc17 = new DraggableMaker(this,18,'M');
+    DraggableMaker mc18 = new DraggableMaker(this,19,'M');
+    DraggableMaker mc19 = new DraggableMaker(this,20,'M');
+    DraggableMaker mc20 = new DraggableMaker(this,21,'M');
+    DraggableMaker mc21 = new DraggableMaker(this,22,'M');
+    DraggableMaker mc22 = new DraggableMaker(this,23,'M');
+    DraggableMaker mc23 = new DraggableMaker(this,24,'M');
+    DraggableMaker mc24 = new DraggableMaker(this,25,'M');
+    DraggableMaker mc25 = new DraggableMaker(this,26,'M');
+    DraggableMaker mc26 = new DraggableMaker(this,27,'M');
+    DraggableMaker mc27 = new DraggableMaker(this, 28,'M');
+    DraggableMaker mc28 = new DraggableMaker(this, 29,'M');
+    DraggableMaker mc29 = new DraggableMaker(this,30,'M');
 
-    DraggableMaker mc30 = new DraggableMaker(this, 31);
-    DraggableMaker mc31 = new DraggableMaker(this, 32);
-    DraggableMaker mc32 = new DraggableMaker(this,33);
+    DraggableMaker mc30 = new DraggableMaker(this, 31,'M');
+    DraggableMaker mc31 = new DraggableMaker(this, 32,'M');
+    DraggableMaker mc32 = new DraggableMaker(this,33,'M');
+    DraggableMaker mc33 = new DraggableMaker(this, 1, 'E');
+    DraggableMaker mc34 = new DraggableMaker(this, 2, 'E');
+    DraggableMaker mc35 = new DraggableMaker(this, 3, 'E');
+
+
+
 
     JPanel sidePanel = new JPanel();
 
@@ -244,6 +251,8 @@ public class LaunchPage implements OnButtonClickLİstener  {
 
 
 
+
+
         }
 
         ;
@@ -262,13 +271,18 @@ public class LaunchPage implements OnButtonClickLİstener  {
         }
         sidePanel.setLayout(new BoxLayout(sidePanel, BoxLayout.Y_AXIS));
         frame.add(sidePanel);
-        sidePanel.setSize(300, frame.getHeight());
+        sidePanel.setSize(200, frame.getHeight());
         masadakiler.setSize(120, 35);
+        masaEkle.setSize(120,35);
+        masaEkle.setLocation(1320, 740);
+        masaEkle.setVisible(false);
+        frame.add(masaEkle);
         frame.add(masadakiler);
         masadakiler.setLocation(680,20);
         availableRehberler.setSize(120,35);
         frame.add(availableRehberler);
         availableRehberler.setLocation(800,20);
+
         frame.add(mc);
         mc.setLocation(902,556);
         frame.add(mc1);
@@ -314,27 +328,40 @@ public class LaunchPage implements OnButtonClickLİstener  {
         frame.add(mc21);
         mc21.setLocation(581,106);
         frame.add(mc22);
-        mc22.setLocation(1361,15);
+        mc22.setLocation(1350,15);
         frame.add(mc23);
-        mc23.setLocation(1361,15);
+        mc23.setLocation(1350,15);
         frame.add(mc24);
-        mc24.setLocation(1361,15);
+        mc24.setLocation(1350,15);
         frame.add(mc25);
-        mc25.setLocation(1361,15);
+        mc25.setLocation(1350,15);
         frame.add(mc26);
-        mc26.setLocation(1361,15);
+        mc26.setLocation(1350,15);
         frame.add(mc27);
-        mc27.setLocation(1361,15);
+        mc27.setLocation(1350,15);
         frame.add(mc28);
-        mc28.setLocation(1361,15);
+        mc28.setLocation(1350,15);
         frame.add(mc29);
-        mc29.setLocation(1361,15);
+        mc29.setLocation(1350,15);
         frame.add(mc30);
-        mc30.setLocation(1361,65);
+        mc30.setLocation(1350,15);
         frame.add(mc31);
-        mc31.setLocation(1361,65);
+        mc31.setLocation(1350,15);
         frame.add(mc32);
-        mc32.setLocation(1361,65);
+        mc32.setLocation(1350,15);
+        for (int i = 34; i < 60 ; i++) {
+            addDesk(i, 1350, 15, 'M');
+        }
+
+        mc33.setLocation(1350, 65);
+        mc34.setLocation(1350,65);
+        mc35.setLocation(1350,65);
+        addDesk(1, 1350, 115, 'Ç');
+        addDesk(2, 1350, 115, 'Ç');
+        addDesk(3, 1350, 115, 'Ç');
+        frame.add(mc33);
+        frame.add(mc34);
+        frame.add(mc35);
 
 
         masadakiler.addActionListener(new ActionListener() {
@@ -347,10 +374,23 @@ public class LaunchPage implements OnButtonClickLİstener  {
         availableRehberler.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                RehberlerFull newRehberlerFull = new RehberlerFull();
+                allRehbers newRehberlerFull = new allRehbers();
             }
         });
 
+        masaEkle.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                MasaEkle masaEkle = new MasaEkle();
+                System.out.println("sa");
+                DraggableMaker desk = new DraggableMaker(LaunchPage.this, masaEkle.getNumara(), masaEkle.getIsim());
+
+                frame.add(desk);
+                desk.setLocation(800, 600);
+
+
+            }
+        });
 
 
 
@@ -372,6 +412,12 @@ public class LaunchPage implements OnButtonClickLİstener  {
 
     }
 
+    public void addDesk(int no, int x, int y, char name){
+        DraggableMaker desk = new DraggableMaker(this, no, name);
+        desk.setLocation(x,y);
+        frame.add(desk);
+    }
+
 
     public void buildPanel() {
         // First, remove all existing components
@@ -381,7 +427,7 @@ public class LaunchPage implements OnButtonClickLİstener  {
         // Then, add a label for each item in the array list
         for (MasaInfo item : arrayList) {
             if (item != null){
-                JLabel label = new JLabel(item.getName() + "  /  " + item.getDepart() + "  /  M-" + item.getDeskNo());
+                JLabel label = new JLabel(item.getName() + "  /  " + item.getDepart() + "  /  " + item.getDeskName() + "-" + item.getDeskNo());
                 sidePanel.add(label);
             }
         }

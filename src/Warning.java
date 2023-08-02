@@ -7,11 +7,11 @@ public class Warning implements ActionListener {
 
     JDialog d1 = new JDialog();
     JDialog frame = new JDialog(d1,Dialog.ModalityType.DOCUMENT_MODAL);
-    JButton button = new JButton("Yaptığım hatanın farkındayım. Uygun rehber bulacağım");
-    JLabel label = new JLabel("Eğer uygunsa da, o masayı kapatıp buraya ekleyeceğim.");
+    JButton button = new JButton();
+    JLabel label = new JLabel();
 
     String department;
-    Warning(){
+    Warning(String hata, String expl){
 
 
         ImageIcon icon = new ImageIcon("cemil.jpeg");
@@ -21,7 +21,8 @@ public class Warning implements ActionListener {
 
         button.setSize(390, 40);
         label.setSize(390,40);
-
+        button.setText(hata);
+        label.setText(expl);
         button.setLocation(50,290);
         label.setLocation(50, 340);
         button.addActionListener(new ActionListener() {

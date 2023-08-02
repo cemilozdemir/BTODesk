@@ -17,6 +17,7 @@ public class DraggableMaker
     private volatile int myX = 0;
     private volatile int myY = 0;
     private OnButtonClickLİstener onButtonClickListener;
+    public char name;
     JButton button = new JButton();
     JLabel counterLabel;
     Timer timer;
@@ -33,8 +34,9 @@ public class DraggableMaker
     int status; // status 0 == bos, status == 1 aranıyor, status == 2 anlatıyor
 
 
-    public DraggableMaker(OnButtonClickLİstener listener, int masaNo) {
+    public DraggableMaker(OnButtonClickLİstener listener, int masaNo, char name) {
         this.masaNo = masaNo;
+        this.name = name;
         this.onButtonClickListener = listener;
         status = 0;
         setBorder(new LineBorder(Color.GREEN, 3));
@@ -43,7 +45,7 @@ public class DraggableMaker
         setOpaque(false);
         setLayout(new BorderLayout());
         button.setBounds(0,0, 100,50);
-        button.setText("M-" + masaNo);
+        button.setText(name + "-" + masaNo);
         button.addActionListener(this);
         counterLabel = new JLabel("");
         counterLabel.setHorizontalAlignment(JLabel.CENTER);
@@ -141,10 +143,11 @@ public class DraggableMaker
                         ex.printStackTrace();
                     }
 
-                    button.setText("M-" + masaNo);
+                    button.setText(name + "-" + masaNo);
                     temp.setName(rehber);
                     temp.setDepart(department);
                     temp.setDeskNo(masaNo);
+                    temp.setDeskName(name);
 
                     busyRehberler.add(temp);
                     for (Rehber item: LaunchPage.rehbers){
@@ -213,10 +216,11 @@ public class DraggableMaker
                         ex.printStackTrace();
                     }
 
-                    button.setText("M-" + masaNo);
+                    button.setText(name + "-" + masaNo);
                     temp.setName(rehber);
                     temp.setDepart(department);
                     temp.setDeskNo(masaNo);
+                    temp.setDeskName(name);
 
                     busyRehberler.add(temp);
                     for (Rehber item: LaunchPage.rehbers){
@@ -240,7 +244,9 @@ public class DraggableMaker
             if (rehberListForDep.getIptal()){
 
                 setBorder(new LineBorder(Color.GREEN, 3));
+
                 status = 0;
+                button.setText(name + "-" + masaNo);
                 counterLabel.setText("00:00");
                 second = 0;
                 minute = 0;
